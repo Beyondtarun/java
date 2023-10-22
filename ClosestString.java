@@ -1,13 +1,11 @@
 public class ClosestString {
 	
-// Function to return shortest distance
 static int shortestDistance(String[] s,
 					String word1, String word2)
 {
 	int d1 = -1, d2 = -1;
 	int ans = Integer.MAX_VALUE;
 
-	// Traverse the string
 	for (int i = 0; i < s.length; i++) {
 		if (s[i] == word1)
 			d1 = i;
