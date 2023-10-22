@@ -5,12 +5,13 @@ public class stringpractice extends Exception {
 
     public static void main(String[] args) {
          String str= "hello";
+         String str5= "hello";
         //  String str1="hello";
-        String str1 = new String("aello");
+        // String str1 = new String("aello");
         String str2 = null;
         String str3 = null;
         try{
-           System.out.println(str1.compareTo(str3));
+           System.out.println(str+str5);
 
         }
         catch (Exception e){
@@ -19,7 +20,7 @@ public class stringpractice extends Exception {
         
         //  System.out.println(str == str1);
         // System.out.println(str.equals(str1) );
-        System.out.println(str.compareTo(str1));
+        // System.out.println(str.compareTo(str1));
 // /         System.out.println(str.indexOf("h"));
 //         System.out.println(str1.length());
 //     System.out.println(str1==str);
