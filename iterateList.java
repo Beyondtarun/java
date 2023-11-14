@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 public class iterateList {
     public static void main(String[] args) {
@@ -9,6 +10,10 @@ public class iterateList {
         
         for(String element : list){
             System.out.println(element+" ");
+        }
+        Iterator<String> iterator = list.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
         }
 
     }
