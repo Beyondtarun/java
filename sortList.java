@@ -5,7 +5,7 @@ import java.util.List;
 
 public class sortList {
     public static void main(String[] args) {
-        List<Integer> list =  new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<Integer>();
         list.add(111);
         list.add(31);
         list.add(28);
@@ -15,7 +15,8 @@ public class sortList {
         list.add(3);
         System.err.println(list);
         Collections.sort(list);
-System.err.println(list);
+        System.err.println(list);
+        System.err.println(list.get(2));
 
     }
 }
