@@ -7,7 +7,7 @@ public class removeElement {
         list.add(2);
         list.add(3);
         System.err.println(list);
-        list.remove(1);
+        list.remove(2);
         System.err.println(list);
     }
 
