@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class MajorityElement{
     public static void main(String args[]){
-        int a[]={2,1,2,3,1,2,4,1,5,2,1,1,1,1,1};
+        int a[]={1,2};
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i=0;i<a.length;i++){
           if(map.containsKey(a[i])){
@@ -13,9 +13,9 @@ public class MajorityElement{
             map.put(a[i],1);
           }
         }
-       for( Map.Entry<Integer,Integer> entry : map.entrySet()){
-        if(entry.getValue()>=a.length/2){
-            System.out.println(entry.getKey()+" ");
+       for( int key : map.keySet()){
+        if(map.get(key)>=a.length/2){
+            System.out.println(key);
         }
        }
     }
