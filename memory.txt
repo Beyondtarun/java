@@ -1,0 +1,22 @@
+#Memory Storage in JAVA
+==================================================================================
+  Method area -> Heap area -> Static area -> PC regsiters -> Native Method Area 
+==================================================================================
+
+1. primitive data type(i.e int,char etc) will store in HEAP area
+2. Static Variables will store in METHOD area
+3. methods Store in STACK area
+4. Objects Store in HEAP area
+5. current running method will store in STACK area
+
+eg: class Test{
+    int a =10; // HEAP AREA
+    static int b = 20; //METHOD area
+    void show(){ // STACK area
+        //code
+    }
+    public static void main(String[] args){ //STACK area
+        Test t = new Test(); //HEAP area
+        t.show(); // STACK AREA
+    }
+}

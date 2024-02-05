@@ -1,1 +1,21 @@
 #STRINGS ?
+1. String is a non-primitive data type(means size is not fixed)
+2. String is the sequence of characters.(Array of Charracters)
+eg:- char [] c ={a,b,c,d,e}; //Collection CharSequence(interface) to implement the same
+String S = new String(c);
+
+3. String is a class
+     
+     public final class String extends Object implements CharSequence,Serializable,Comparable {
+        //Serializable: interface is used when we need to store a copy of the object and send them to another process which runs on the same system or over the network.
+        //Comparable: interface is used to order the objects of the class. it has only one method compareTo();
+     }
+     Q. Why it is final?
+4. String S = new String(); // object S <- immutable object
+   String S = "tarun"; // this is also a objects
+   Q. Differnce b/w above methods
+
+5. To Create Strings classes are: String, StringBuffer, StringBuilder
+
+#STRING CONSTANT POOL
+1. special memory location to store String values and objects 
