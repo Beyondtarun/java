@@ -1,0 +1,38 @@
+ARRAYS ARE OBJECT IN JAVA
+
+1.1-D array
+
+#declartion: (can be declared with primitive or classname(for storing objects))
+
+int[] a;//conventional     | int[9] a; wrong
+int []a;
+int a[];
+int[]a;
+
+int []a,b; //both array
+int[] a,b; //both array
+int a[],b; //only a array and b is int
+
+#Creation:(giving size in compulsory)
+ 
+a= new int[size]; //size could be ZERO but negative size can give runtime exception
+int a[] = new int[size];//declaration + creation;
+
+#Intialization: after creation default 0.
+int[] a ={10,20,20,.,.};
+int[] a = new int[]{10,20,20,.,.}; //do not declre size it will give error
+
+2. 2-D ARRAY
+
+declaration:
+int[][] a;  | int[] a[],b; a is 2d b is 1d
+int [][]a;  | int[] a[],b[]; both 2d
+int a[][];  | int[][] a,[]b; compile time error for b // bracket before varable can be only for first;
+int[] a[];
+int[] []a;
+
+creation:
+ int[][] a = new int[rows][col];
+
+Jagged array // every row has diff col;
+
