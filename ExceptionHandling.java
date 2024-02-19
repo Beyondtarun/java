@@ -88,7 +88,7 @@ public class ExceptionHandling {
         /*
          * THROW : jab ek normal statement ko exception ki trha throw krna ho // throw
          * ke baad likha hua code execute nhi hoga
-         * THROWS : 
+         * THROWS : used to declare exception . it specifies that there may occur an exception in the method. it doesn't throw an exception only specify it so that programmmer handle the exception
          */
 
         System.out.println("Enter age:");
@@ -98,7 +98,12 @@ public class ExceptionHandling {
         } else {
             System.err.println("you can vote");
         }
-     dividsion(10, 0);
+try{
+    dividsion(10, 0); //using Throws keyword
+
+}catch(Exception e){
+    System.out.println("Exception Handles");
+}
 
     }
 
